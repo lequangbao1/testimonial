@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html ,body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    background: #17a2b8;
+    height: 100%;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #17a2b8;
+    border: 2px solid white;
+    
+}
+
+.content .image {
+    padding: 3px;
+    height: 75px;
+    width: 75px;
+    background: #17a2b8;
+    border-radius: 50%;
+    
+    
+}
+
+.wrapper .box {
+    background: white;
+    border-radius: 5px;
+    padding: 25px;
+    width: calc(33% - 10px);
+    
+}
+
+.wrapper .box i {
+    font-size: 20px;
+    color: #17a2b8;
+}
+
+.wrapper .box .content {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.wrapper .box .info .name {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.wrapper .box .info .job {
+    font-size: 16px;
+    font-weight: 500;
+    color: #17a2b8;
+}
+
+::selection {
+    background: rgba(23,162,184,0.3);
+}
+
+.wrapper .box .info .stars {
+    margin-top: 2px;
+    color: #17a2b8;
+}
+
+@media (max-width: 1045px) {
+    .wrapper .box {
+        width: calc(50% - 10px);
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 702px) {
+    .wrapper .box {
+        width: 100%;
+    }
+}
